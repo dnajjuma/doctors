@@ -135,7 +135,7 @@ const Sidebar = () => {
             </Typography> */}
             <Item
               title="Patients"
-              to="/team"
+              to="/patient"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

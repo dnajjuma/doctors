@@ -5,7 +5,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
 import { Typography } from "@mui/material";
 
-const Form = () => {
+const Newpatient = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
 
   const handleFormSubmit = (values) => {
@@ -13,7 +13,7 @@ const Form = () => {
   };
 
   return (
-    <Box m="20px">
+    <Box m="20px" p="30px">
       <Header title="ADD PATIENT" subtitle="Create a New Patient Profile" />
 
       <Formik
@@ -161,7 +161,7 @@ const Form = () => {
             </Box>
             <Box display="flex" justifyContent="end" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
-                Create New User
+                Create New Patient
               </Button>
             </Box>
           </form>
@@ -194,4 +194,4 @@ const initialValues = {
   address2: "",
 };
 
-export default Form;
+export default Newpatient;
