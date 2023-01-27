@@ -14,7 +14,7 @@ const Newpatient = () => {
 
   return (
     <Box m="20px" p="30px">
-      <Header title="ADD PATIENT" subtitle="Create a New Patient Profile" />
+      <Header title="ADD NEW PATIENT" subtitle="Create a New Patient Profile" />
 
       <Formik
         onSubmit={handleFormSubmit}
